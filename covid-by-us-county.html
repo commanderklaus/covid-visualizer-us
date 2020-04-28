@@ -11,8 +11,18 @@
 </head>
 
 <body>
-<h1>US Coronavirus Case Distribution By County for <span id="current-date"></span></h1>
-<svg id="map" width="980" height="620"></svg>
+<div id="wrapper">
+	<h1>US Coronavirus Case Distribution By County for <span id="current-date"></span></h1>
+	<svg id="map" width="980" height="620"></svg>
+	<p>This file is a data visualization exercise using the Covid-19 spread data gathered by the New York Times and the D3.js library. The size of the bubbles on the map correspond to the respective coronavirus case count on the given date in the respective county.</p>
+	<p>Hovering over the bubbles will reveal the name of the county and the case count (via the "title" attribute). Zooming in and out of the map is available as well.</p>
+	<h2>Resources and Reference</h2>
+	<ul>
+		<li><a href="https://klauskomenda.net/blog/2020/04/28/visualizing-covid-19-d3/" target="_blank">Blog post with more details about this exercise</a></li>
+		<li><a href="https://github.com/commanderklaus/covid-visualizer-us/" target="_blank">GitHub repo for this exercise</a></li>
+		<li><a href="https://github.com/nytimes/covid-19-data/" target="_blank">NYT Covid-19 data repo</a></li>
+	</ul>
+</div>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://d3js.org/topojson.v2.min.js"></script>
 <script src="main.js"></script>
